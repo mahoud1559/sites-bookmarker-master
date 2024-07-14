@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Site Bookmarker</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="bookmarker-container my-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 offset-md-2">
+            <h1 class="h3 text-muted">Bookmarker</h1>
+            <form
+              id="myForm"
+              class="form-container my-4 p-5 rounded text-center"
+            >
+              <h2 class="text-center text-muted">
+                Bookmark your favorite site
+              </h2>
+              <div class="form-group">
+                <label for="mySiteName" class="text-muted w-100 text-center"
+                  >Site Name</label
+                >
+                <input
+                  id="mySiteName"
+                  class="form-control"
+                  type="text"
+                  placeholder="website name"
+                />
+              </div>
+              <div class="form-group">
+                <label for="mySiteUrl" class="text-muted w-100 text-center"
+                  >Site Url</label
+                >
+                <input
+                  id="mySiteUrl"
+                  class="form-control"
+                  type="text"
+                  placeholder="website url"
+                />
+              </div>
+              <button id="siteSubmit" type="submit" class="btn btn-primary">
+                Submit
+              </button>
+            </form>
+            <div class="sites"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
